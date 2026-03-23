@@ -187,10 +187,8 @@ CREATE TABLE collaboration (
     start_date       DATE                                                           NOT NULL,
     end_date         DATE,
 
-    CONSTRAINT fk_collab_p1 FOREIGN KEY (project_id_1) REFERENCES project(project_id)
-        ON UPDATE CASCADE ON DELETE CASCADE,
-    CONSTRAINT fk_collab_p2 FOREIGN KEY (project_id_2) REFERENCES project(project_id)
-        ON UPDATE CASCADE ON DELETE CASCADE,
+    CONSTRAINT fk_collab_p1 FOREIGN KEY (project_id_1) REFERENCES project(project_id),
+    CONSTRAINT fk_collab_p2 FOREIGN KEY (project_id_2) REFERENCES project(project_id),
 
     -- Prevent self-collaboration and duplicate reverse pairs
     CONSTRAINT chk_collab_diff CHECK (project_id_1 < project_id_2),
