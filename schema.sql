@@ -3,6 +3,9 @@
 -- Compatible with: MySQL 8.0+
 -- ============================================================
 
+-- Disable foreign key checks for clean table creation
+SET FOREIGN_KEY_CHECKS = 0;
+
 -- Drop existing tables (in reverse dependency order) for clean re-creation
 DROP TABLE IF EXISTS collaboration;
 DROP TABLE IF EXISTS project_progress;
@@ -291,3 +294,6 @@ INSERT INTO collaboration (project_id_1, project_id_2, collab_type, description,
 (1, 2, 'resource_sharing',
  'Smart Campus App team shares their student database module with the Plagiarism Detection team for testing on real submissions.',
  '2025-10-01');
+
+-- Re-enable foreign key checks
+SET FOREIGN_KEY_CHECKS = 1;
