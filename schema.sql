@@ -208,9 +208,9 @@ CREATE INDEX idx_project_status ON project(status);
 
 -- Students
 INSERT INTO student (name, email, phone, department, year_of_study, enrollment_year) VALUES
-('Aarav Sharma',    'aarav.sharma@eng.edu',    '9876543210', 'Computer Science', 3, 2023),
-('Priya Patel',     'priya.patel@eng.edu',     '9876543211', 'Computer Science', 3, 2023),
-('Rohan Mehta',     'rohan.mehta@eng.edu',      '9876543212', 'Information Technology', 3, 2023),
+('Shlok',              'aarav.sharma@eng.edu',    '9876543210', 'Computer Science', 3, 2023),
+('Shubham Nagpal',     'priya.patel@eng.edu',     '9876543211', 'Computer Science', 3, 2023),
+('Kunj Singhal',       'rohan.mehta@eng.edu',      '9876543212', 'Information Technology', 3, 2023),
 ('Sneha Desai',     'sneha.desai@eng.edu',      '9876543213', 'Electronics', 2, 2024),
 ('Vikram Singh',    'vikram.singh@eng.edu',     '9876543214', 'Computer Science', 4, 2022),
 ('Ananya Gupta',    'ananya.gupta@eng.edu',     '9876543215', 'Information Technology', 4, 2022);
